@@ -3,7 +3,7 @@ Implementación de sokoban en Python, versión retro consola.
 
 ## Desing Docs
 
-El Sokoban es un juego de rompecabezas que pone a prueba la lógica y la planificación estratégica del jugador. El objetivo principal del juego es empujar cajas o bloques dentro de un almacén, con el fin de colocar cada una de ellas en una posición específica. A primera vista, puede parecer sencillo, pero a medida que avanzas en los niveles, se presentan desafíos cada vez más complejos que requieren de una cuidadosa planificación de movimientos para evitar quedarse atascado o bloquear el camino hacia la meta. Sokoban es un juego que combina la simplicidad de sus reglas con la profundidad de su jugabilidad, proporcionando horas de entretenimiento para aquellos que disfrutan de desafíos mentales.
+* El Sokoban es un juego de rompecabezas que pone a prueba la lógica y la planificación estratégica del jugador. El objetivo principal del juego es empujar cajas o bloques dentro de un almacén, con el fin de colocar cada una de ellas en una posición específica. A primera vista, puede parecer sencillo, pero a medida que avanzas en los niveles, se presentan desafíos cada vez más complejos que requieren de una cuidadosa planificación de movimientos para evitar quedarse atascado o bloquear el camino hacia la meta. Sokoban es un juego que combina la simplicidad de sus reglas con la profundidad de su jugabilidad, proporcionando horas de entretenimiento para aquellos que disfrutan de desafíos mentales. *
 
 ### Elementos
 - Personaje.
