@@ -3,8 +3,9 @@ Implementación de sokoban en Python, versión retro consola.
 
 ## Desing Docs
 
-### Objetivo: Acomodar cajas en un punto determinado.
+### El objetivo principal del juego es bastante simple en apariencia, pero desafiante en la práctica: mover cajas o bloques dentro de un almacén para colocarlos en ubicaciones específicas.
 
+### Elementos
 - Personaje.
 - Cajas.
 - Metas.
