@@ -26,4 +26,4 @@ Implementación de sokoban en Python, versión retro consola.
 
 ### NIveles del juego
 
- - De 1 a "n" niveles.
+ - De 1 a "n" niveles. 
