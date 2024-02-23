@@ -37,6 +37,6 @@ ___
 |1|3:00min|1250|
 
 # Redes sociales
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Imagen 1" style="width:50px;height:50px;">       <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Imagen 2" style="width:50px;height:50px;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Imagen 1" style="width:70px;height:70px;"> <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Imagen 2" style="width:70px;height:70px;">
 
 [Instagram](https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F) [Facebook](https://www.facebook.com/?locale=es_LA)
