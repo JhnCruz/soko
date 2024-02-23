@@ -3,7 +3,7 @@ Implementación de sokoban en Python, versión retro consola.
 
 ## Desing Docs
 
-###Objetivo: Acomodar cajas en un punto determinado.
+##Objetivo: Acomodar cajas en un punto determinado.
 
 - Personaje.
 - Cajas.
