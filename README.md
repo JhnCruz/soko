@@ -23,7 +23,7 @@ Implementación de sokoban en Python, versión retro consola.
 - Empujar una 1 caja hacia abajo y que delante este un piso.
 - Empujar una 1 caja hacia la derecha y que delante este un piso.
 - Empujar una 1 caja hacia la izquierda y que delante este un piso.
-- 
+
 ## NIveles del juego
 
  De 1 a "n" niveles.
