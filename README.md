@@ -12,7 +12,7 @@ Implementación de sokoban en Python, versión retro consola.
 - Espacio/piso.
 - Contadores (de tiempo y movimientos).
 
-## Reglas o mecanicas del juego
+### Reglas o mecanicas del juego
 
 - Moverse hacia arriba sobre el piso.
 - Moverse hacia abajo sobre el piso.
@@ -24,6 +24,6 @@ Implementación de sokoban en Python, versión retro consola.
 - Empujar una 1 caja hacia la derecha y que delante este un piso.
 - Empujar una 1 caja hacia la izquierda y que delante este un piso.
 
-## NIveles del juego
+### NIveles del juego
 
  De 1 a "n" niveles.
