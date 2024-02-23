@@ -30,11 +30,13 @@ ___
 ____
 El final de juego se obtendra hasta terminar el numero maximo de niveles.
 ___
-### Interfaz de juego
+### Record goblal __user_09898__ 
 
-| Intentos | Tiempo promedio | Niveles superados |
+| Intentos por nivel | Tiempo promedio | Niveles superados |
 |:--------:|:---------------:|:-----------------:|
-|1|5:00min|10|
+|1|3:00min|1250|
 
 # Redes sociales
-[instagram](https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F)
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Imagen 1" style="width:50px;height:50px;">       <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Imagen 2" style="width:50px;height:50px;">
+
+[Instagram](https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F) [Facebook](https://www.facebook.com/?locale=es_LA)
