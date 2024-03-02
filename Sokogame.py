@@ -1,3 +1,6 @@
+import time
+import sys
+
 class Soko:
 
     mapa = [] # mapa del juego
@@ -19,6 +22,8 @@ class Soko:
         self.personaje_fila = 2
 
     def imprimirMapa(self):
+        # Limpiar la pantalla
+        print("\033[H\033[J", end="")
         for filas in self.mapa:
             print(filas)
 
