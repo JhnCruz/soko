@@ -14,7 +14,7 @@ class SokoGame_Retroversion:
         # Define el mapa de juego
         self.mapa =[
             [3,3,3,3,3,3,3,3,3],
-            [3,4,4,4,4,4,4,4,3],
+            [3,4,4,4,4,4,2,4,3],
             [3,4,4,4,4,4,4,4,3],
             [3,4,4,4,4,4,4,4,3],
             [3,4,4,4,0,4,4,4,3],
@@ -34,11 +34,15 @@ class SokoGame_Retroversion:
         for fila in self.mapa:
             for numero in fila:
                 if numero == 4:
-                    print(" ", end=" ")  # Imprime un espacio en lugar del número 4
+                    print("  ", end=" ")  # Imprime un espacio en lugar del número 4
+                elif numero == 0:
+                    print("😾", end=" ")  # Imprime un emoji de gato en lugar del numero 0
+                elif numero == 3:
+                    print("🚧", end=" ")
                 else:
                     print(numero, end=" ")
             print()  # Agrega un salto de línea después de cada fila
-
+        
     def movimiento_derecha(self):
         # Comprobar si hay una pared (3) a la derecha
         if self.mapa[self.personaje_fila][self.personaje_columna + 1] != 3:
@@ -48,6 +52,7 @@ class SokoGame_Retroversion:
             self.mapa[self.personaje_fila][self.personaje_columna + 1] = 0
             # Actualiza la posicion del personaje
             self.personaje_columna += 1
+          
 
     def movimiento_izquierda(self):
         # Comprobar si hay una pared (3) a la izquierda
@@ -78,6 +83,7 @@ class SokoGame_Retroversion:
             self.mapa[self.personaje_fila - 1][self.personaje_columna] = 0
             # Actualiza la posicion del personaje
             self.personaje_fila -= 1
+  
 
     def jugar(self):
         while True:
