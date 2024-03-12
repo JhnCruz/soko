@@ -8,10 +8,11 @@ class SokoGame_Retroversion:
     personaje_fila = 0
     caja_columna = 1
     caje_fila = 1
-
+    meta_columna = 2
+    meta_fila = 2
 
     def __init__(self):
-        # Define el mapa de juego
+        # Define el mapa de jueg
         self.mapa =[
             [3,3,3,3,3,3,3,3,3],
             [3,4,4,4,4,4,2,4,3],
@@ -19,7 +20,7 @@ class SokoGame_Retroversion:
             [3,4,4,4,4,4,4,4,3],
             [3,4,4,4,0,4,4,4,3],
             [3,4,4,4,4,4,4,4,3],
-            [3,4,4,4,4,4,4,4,3],
+            [3,4,4,4,4,4,1,4,3],
             [3,4,4,4,4,4,4,4,3],
             [3,3,3,3,3,3,3,3,3]
         ]
@@ -27,6 +28,8 @@ class SokoGame_Retroversion:
         # Definimos la posicion inicial del personaje
         self.personaje_columna = 4
         self.personaje_fila = 4
+        self.caja_columna = 6
+        self.caja_fila = 6
 
     def imprimirMapa(self):
         # Limpiar la pantalla
@@ -38,11 +41,15 @@ class SokoGame_Retroversion:
                 elif numero == 0:
                     print("😾", end=" ")  # Imprime un emoji de gato en lugar del numero 0
                 elif numero == 3:
-                    print("🚧", end=" ")
+                    print("🚧", end=" ")  # Imprime un emoji de gato en lugar del numero 3
+                elif numero == 1:
+                    print("📦", end=" ")  # Imprime un emoji de gato en lugar del numero 1
+                elif numero == 2:
+                    print("🚩", end=" ")  # Imprime un emoji de gato en lugar del numero 2
                 else:
                     print(numero, end=" ")
             print()  # Agrega un salto de línea después de cada fila
-        
+
     def movimiento_derecha(self):
         # Comprobar si hay una pared (3) a la derecha
         if self.mapa[self.personaje_fila][self.personaje_columna + 1] != 3:
@@ -52,7 +59,7 @@ class SokoGame_Retroversion:
             self.mapa[self.personaje_fila][self.personaje_columna + 1] = 0
             # Actualiza la posicion del personaje
             self.personaje_columna += 1
-          
+
 
     def movimiento_izquierda(self):
         # Comprobar si hay una pared (3) a la izquierda
@@ -83,7 +90,7 @@ class SokoGame_Retroversion:
             self.mapa[self.personaje_fila - 1][self.personaje_columna] = 0
             # Actualiza la posicion del personaje
             self.personaje_fila -= 1
-  
+
 
     def jugar(self):
         while True:
