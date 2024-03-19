@@ -28,6 +28,7 @@ ___
 - Personaje_meta
 - Caje_meta
 #### Mapa
+````code
 mapa = [
             [3,3,3,3,3],
             [3,4,4,4,3],
@@ -35,6 +36,7 @@ mapa = [
             [3,4,4,4,3],
             [3,3,3,3,3]
         ]
+````
 <br>
 <br>
 |3, &nbsp;3, &nbsp;3, &nbsp;3, &nbsp;3, &nbsp;3, &nbsp;3| <br>
@@ -59,18 +61,6 @@ ___
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Imagen 1" style="width:70px;height:70px;"> <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Imagen 2" style="width:70px;height:70px;">
 
 [Instagram](https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F) [Facebook](https://www.facebook.com/?locale=es_LA)
-
-Cada nivel del juego se colocará dentro de una array bidimensional, colocando números para representar los elementos de juego, a continuación se tiene un ejemplo básico de nivel.
-
-````code
-mapa = [
-            [3,3,3,3,3,3,3],
-            [3,4,4,4,4,4,3],
-            [3,4,0,4,1,2,3],
-            [3,4,4,4,4,4,3],
-            [3,3,3,3,3,3,3]
-        ]
-````
 
 ### 3.2 Lista de elementos
 
