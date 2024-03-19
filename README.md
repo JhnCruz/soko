@@ -59,3 +59,135 @@ ___
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Imagen 1" style="width:70px;height:70px;"> <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Imagen 2" style="width:70px;height:70px;">
 
 [Instagram](https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F) [Facebook](https://www.facebook.com/?locale=es_LA)
+
+Cada nivel del juego se colocará dentro de una array bidimensional, colocando números para representar los elementos de juego, a continuación se tiene un ejemplo básico de nivel.
+
+````code
+mapa = [
+            [3,3,3,3,3,3,3],
+            [3,4,4,4,4,4,3],
+            [3,4,0,4,1,2,3],
+            [3,4,4,4,4,4,3],
+            [3,3,3,3,3,3,3]
+        ]
+````
+
+### 3.2 Lista de elementos
+
+- 0 - Personaje
+- 1 - Cajas
+- 2 - Metas
+- 3 - Paredes
+- 4 - Piso
+- 5 - Pesonaje meta
+- 6 - Caja meta
+
+## 4. Controles
+
+Para moverse en el juego el usuario utilizará alguna de las siguientes letras para indicar hacia adonde se quiere mover:
+
+- a -> Izquierda
+- s -> Derecha
+- w -> Arriba
+- s -> Abajo
+
+Nota: El proceso es que se muestra el mapa y se solicita al usuario que escriba la letra hacia donde se quiere mover, despúes de colocar la letra se preciona enter y se actualiza el mapa, este proceso se repite de forma infinita.
+
+
+## 5. Función a implementar
+
+Para llevar un mejor control del avance del desarrollo llenar Kanban con los siguientes elementos (ToDo, Doing y Done).
+
+| No. |Función | Kanban | Fecha terminación |
+| --- | --- | --- | --- |
+| 0. | Cargar el siguiente nivel. | - | - |
+| 1. | Repetir el juego hasta terminar el nivel. | - | - |
+| 2. | Imprimir mapa.| - | - |
+| 3. | Leer el movimiento. | - | - |
+| 4. | Evaluar el movimiento del usuario. | - | - |
+
+## Derecha
+
+Ejemplo de movimientos Inicio y Fin:
+
+- Personaje, Espacio [0,4] -> Espacio, Personaje [4,0] |
+
+
+| No. | Función | Kanban | Inicio | Fin | Fecha terminación |
+| --- | --- | --- | --- | --- | --- |
+| 5. | Personaje, espacio  | - | [      ] | [     ] | - |
+| 6. | Personaje, meta  | - | [      ] | [      ] |- |
+| 7. | Personaje, caja, espacio | - | [      ] | [      ] | - |
+| 8. | Personaje, caja,  meta | - | [      ] | [      ] | - |
+| 9. | Personaje, caja_meta, espacio | - | [       ] | [       ] | - |
+| 10. |Personaje, caja_meta, meta | - | [       ] | [       ] | - |
+| 11. | Personaje_meta, espacio | - | [       ] | [       ] | - |
+| 12. | Personaje_meta, meta | - | [       ] | [       ] | - |
+| 13. | Personaje_meta, caja, espacio | - | [       ] | [       ] | - |
+| 14. | Personaje_meta, caja, meta | - | [       ] | [       ] | - |
+| 15. | Personaje_meta, caja_meta, espacio | - | [       ] | [       ] | - |
+| 16. | Personaje_meta, caja_meta, meta | - | [       ] | [       ] | - |
+
+## Izquierda
+
+| No. | Función | Kanban | Inicio | Fin | Fecha terminación |
+| --- | --- | --- | --- | --- | --- |
+| 17. | Personaje, espacio | - | [       ] | [       ] | - |
+| 18. | Personaje, meta | - | [       ] | [       ] | - |
+| 19. | Personaje, caja, espacio | - | [       ] | [       ] | - |
+| 20. | Personaje, caja, meta | - | [       ] | [       ] | - |
+| 21. | Personaje, caja_meta, espacio | - | [       ] | [       ] | - |
+| 22. | Personaje, caja_meta, meta | - | [       ] | [       ] | - |
+| 23. | Personaje_meta, espacio | - | [       ] | [       ] | - |
+| 24. | Personaje_meta, meta | - | [       ] | [       ] | - |
+| 25. | Personaje_meta, caja, espacio | - | [       ] | [       ] | - |
+| 26. | Personaje_meta, caja, meta | - | [       ] | [       ] | - |
+| 27. | Personaje_meta, caja_meta, espacio | - | [       ] | [       ] | - |
+| 28. | Personaje_meta, caja_meta, meta | - | [       ] | [       ] | - |
+
+## Arriba
+
+| No. | Función | Kanban | Inicio | Fin | Fecha terminación |
+| --- | --- | --- | --- | --- | --- |
+| 29. | Personaje, espacio | - | [][] | [][] | - |
+| 30. | Personaje, meta | - | [][] | [][] | - |
+| 31. | Personaje, caja, espacio | - | [][] | [][] | - |
+| 32. | Personaje, caja, meta | - | [][] | [][] | - |
+| 33. | Personaje, caja_meta, espacio | - | [][] | [][] | - |
+| 34. | Personaje, caja_meta, meta | - | [][] | [][] | - |
+| 35. | Personaje_meta, espacio | - | [][] | [][] | - |
+| 36. | Personaje_meta, meta | - | [][] | [][] | - |
+| 37. | Personaje_meta, caja, espacio | - | [][] | [][] | - |
+| 38. | Personaje_meta, caja, meta | - | [][] | [][] | - |
+| 39. | Personaje_meta, caja_meta, espacio | - | [][] | [][] | - |
+| 40. | Personaje_meta, caja_meta, meta | - | [][] | [][] | - |
+
+## Abajo
+
+| No. | Función | Kanban | Inicio | Fin | Fecha terminación |
+| --- | --- | --- | --- | --- | --- |
+| 41. | Personaje, espacio | - | [][] | [][] | - |
+| 42. | Personaje, meta | - | [][] | [][] | - |
+| 43. | Personaje, caja, espacio | - | [][] | [][] | - |
+| 44. | Personaje, caja, meta | - | [][] | [][] | - |
+| 45. | Personaje, caja_meta, espacio | - | [][] | [][] | - |
+| 46. | Personaje, caja_meta, meta | - | [][] | [][] | - |
+| 47. | Personaje_meta, espacio | - | [][] | [][] | - |
+| 48. | Personaje_meta, meta | - | [][] | [][] | - |
+| 49. | Personaje_meta, caja, espacio | - | [][] | [][] | - |
+| 50. | Personaje_meta, caja, meta | - | [][] | [][] | - |
+| 51. | Personaje_meta, caja_meta, espacio | - | [][] | [][] | - |
+| 52. | Personaje_meta, caja_meta, meta | - | [][] | [][] | - |
+
+## Determina si se completo el nivel o no
+
+| No. | Función | Kanban | Fecha terminación |
+| --- | --- | --- | --- |
+| 53. | Evaluar si el nivel esta terminado (Esto sucede cuando todas las cajas estan sobre las metas), SI el nivel esta terminado cargar el siguiente nivel (Los niveles de juego estarán en archivos de texto independiente). | - | - |
+| 54. | Reiniciar el mapa (Con la letra r, se vuelve a cargar el nivel que se esta jugando) | - | - |
+
+## Función extra
+
+| No. | Función | Kanban | Fecha terminación |
+| --- | --- | --- | --- |
+| 55. | Función adicional o powerup (descripción). | - | - |
