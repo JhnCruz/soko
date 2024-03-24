@@ -120,7 +120,6 @@ class SokoGame_Retroversion:
                   # Mover la caja a esa posición
                   self.mapa[self.personaje_fila - 1][self.personaje_columna] = 0
         
-    
           # Donde estaba el personaje pone un piso
           self.mapa[self.personaje_fila][self.personaje_columna] = 4
           # Donde estaba el piso pone al personaje
