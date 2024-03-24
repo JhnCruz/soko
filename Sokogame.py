@@ -35,17 +35,19 @@ class SokoGame_Retroversion:
                     print("  ", end=" ")
                 elif numero == 0:
                     print("😾", end=" ")  
-                # Imprime un emoji de gato en lugar del numero 0
+                # Imprime un emoji de barrera en lugar del numero 0
                 elif numero == 3:
                     print("🚧", end=" ")
-                # Imprime un emoji de gato en lugar del numero 3
+                # Imprime un emoji de caja en lugar del numero 3
                 elif numero == 1:
                     print("📦", end=" ")
-                # Imprime un emoji de gato en lugar del numero 1
+                # Imprime un emoji de meta en lugar del numero 1
                 elif numero == 2:
+                    print("🏁", end=" ")
+                # Imprime un emoji de meta roja en lugar de numero 2 
+                elif numero == 6:
                     print("🚩", end=" ")
-                # Imprime un emoji de 
-                # Imprime un emoji de gato en lugar del numero 2
+                # Imprime un numero es caso de no coincidir con alguna condicion 
                 else:
                     print(numero, end=" ")
             print()  # Agrega un salto de línea después de cada fila
