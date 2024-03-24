@@ -44,6 +44,7 @@ class SokoGame_Retroversion:
                 # Imprime un emoji de gato en lugar del numero 1
                 elif numero == 2:
                     print("🚩", end=" ")
+                # Imprime un emoji de 
                 # Imprime un emoji de gato en lugar del numero 2
                 else:
                     print(numero, end=" ")
@@ -59,6 +60,12 @@ class SokoGame_Retroversion:
                   # Mover la caja
                   self.mapa[self.personaje_fila][self.personaje_columna + 2] = 1
                   # Donde estaba la caja, pone al personaje
+                  self.mapa[self.personaje_fila][self.personaje_columna + 1] = 0
+                # Si es siguiente espacio es una meta "2"
+              elif self.mapa[self.personaje_fila][self.personaje_columna + 2] == 2:
+                  # Convertir la meta en una caja-meta
+                  self.mapa[self.personaje_fila][self.personaje_columna + 2] = 6
+                  # Mover la caja a esa posición
                   self.mapa[self.personaje_fila][self.personaje_columna + 1] = 0
     
           # Donde estaba el personaje pone un piso
@@ -79,6 +86,12 @@ class SokoGame_Retroversion:
                   self.mapa[self.personaje_fila][self.personaje_columna - 2] = 1
                   # Donde estaba la caja, pone al personaje
                   self.mapa[self.personaje_fila][self.personaje_columna - 1] = 0
+                # Si el siguiente espacio es una meta "2"
+              elif self.mapa[self.personaje_fila][self.personaje_columna - 2] == 2:
+                  # Convertir la meta en una caja-meta
+                  self.mapa[self.personaje_fila][self.personaje_columna - 2] = 6
+                  # Mover la caja a esa posición
+                  self.mapa[self.personaje_fila][self.personaje_columna - 1] = 0
     
           # Donde estaba el personaje pone un piso
           self.mapa[self.personaje_fila][self.personaje_columna] = 4
@@ -98,6 +111,13 @@ class SokoGame_Retroversion:
                   self.mapa[self.personaje_fila - 2][self.personaje_columna] = 1
                   # Donde estaba la caja, pone al personaje
                   self.mapa[self.personaje_fila - 1][self.personaje_columna] = 0
+                # Si el siguiente espacio es una meta "2"
+              elif self.mapa[self.personaje_fila - 2][self.personaje_columna] == 2:
+                  # Convertir la meta en una caja-meta
+                  self.mapa[self.personaje_fila - 2][self.personaje_columna] = 6
+                  # Mover la caja a esa posición
+                  self.mapa[self.personaje_fila - 1][self.personaje_columna] = 0
+        
     
           # Donde estaba el personaje pone un piso
           self.mapa[self.personaje_fila][self.personaje_columna] = 4
@@ -117,7 +137,13 @@ class SokoGame_Retroversion:
                   self.mapa[self.personaje_fila + 2][self.personaje_columna] = 1
                   # Donde estaba la caja, pone al personaje
                   self.mapa[self.personaje_fila + 1][self.personaje_columna] = 0
-    
+                # Si el siguiente espacio es una meta "2"
+              elif self.mapa[self.personaje_fila + 2][self.personaje_columna] == 2:
+                  # Convertir la meta en una caja-meta
+                  self.mapa[self.personaje_fila + 2][self.personaje_columna] = 6
+                  # Mover la caja a esa posición
+                  self.mapa[self.personaje_fila + 1][self.personaje_columna] = 0
+            
           # Donde estaba el personaje pone un piso
           self.mapa[self.personaje_fila][self.personaje_columna] = 4
           # Donde estaba el piso pone al personaje
