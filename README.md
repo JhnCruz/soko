@@ -20,13 +20,14 @@ ___
 - Empujar una 1 caja hacia la izquierda y que delante este un piso.
 
 ### Elementos
-- Personaje.
-- Cajas.
-- Metas.
-- Paredes.
-- Espacio/piso.
-- Personaje_meta
-- Caje_meta
+- 0 - Personaje
+- 1 - Cajas
+- 2 - Metas
+- 3 - Paredes
+- 4 - Piso
+- 5 - Pesonaje meta
+- 6 - Caja meta
+
 #### Mapa
 ````code
 mapa = [
@@ -62,15 +63,6 @@ ___
 
 [Instagram](https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F) [Facebook](https://www.facebook.com/?locale=es_LA)
 
-### 3.2 Lista de elementos
-
-- 0 - Personaje
-- 1 - Cajas
-- 2 - Metas
-- 3 - Paredes
-- 4 - Piso
-- 5 - Pesonaje meta
-- 6 - Caja meta
 
 ## 4. Controles
 
