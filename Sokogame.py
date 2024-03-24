@@ -47,7 +47,7 @@ class SokoGame_Retroversion:
                 # Imprime un emoji de meta roja en lugar de numero 2 
                 elif numero == 6:
                     print("🚩", end=" ")
-                # Imprime un numero es caso de no coincidir con alguna condicion 
+                # Imprime un numero en caso de no coincidir con alguna condicion 
                 else:
                     print(numero, end=" ")
             print()  # Agrega un salto de línea después de cada fila
