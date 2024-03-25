@@ -55,98 +55,98 @@ class SokoGame_Retroversion:
     def movimiento_derecha(self):
       # Comprobar si hay una pared (3) a la derecha
       if self.mapa[self.personaje_fila][self.personaje_columna + 1] != 3:
-          # Si el siguiente elemento a la derecha es una caja (1)
-          if self.mapa[self.personaje_fila][self.personaje_columna + 1] == 1:
+          # Si el siguiente elemento a la derecha es una caja (1) o caja_meta (6)
+          if self.mapa[self.personaje_fila][self.personaje_columna + 1] == 1 or self.mapa[self.personaje_fila][self.personaje_columna + 1] == 6:
               # Comprobar si hay espacio para mover la caja
               if (self.personaje_columna + 2) >= 0 and self.mapa[self.personaje_fila][self.personaje_columna + 2] == 4:
                   # Mover la caja
                   self.mapa[self.personaje_fila][self.personaje_columna + 2] = 1
                   # Donde estaba la caja, pone al personaje
-                  self.mapa[self.personaje_fila][self.personaje_columna + 1] = 0
-                # Si es siguiente espacio es una meta "2"
+                  self.mapa[self.personaje_fila][self.personaje_columna + 1] = 0 
+                  # Si es siguiente espacio es una meta "2"
               elif self.mapa[self.personaje_fila][self.personaje_columna + 2] == 2:
                   # Convertir la meta en una caja-meta
                   self.mapa[self.personaje_fila][self.personaje_columna + 2] = 6
                   # Mover la caja a esa posición
                   self.mapa[self.personaje_fila][self.personaje_columna + 1] = 0
-    
+
           # Donde estaba el personaje pone un piso
           self.mapa[self.personaje_fila][self.personaje_columna] = 4
           # Donde estaba el piso pone al personaje
           self.mapa[self.personaje_fila][self.personaje_columna + 1] = 0
           # Actualiza la posicion del personaje
           self.personaje_columna += 1
-    
+
     def movimiento_izquierda(self):
       # Comprobar si hay una pared (3) a la izquierda
       if self.mapa[self.personaje_fila][self.personaje_columna - 1] != 3:
-          # Si el siguiente elemento a la izquierda es una caja (1)
-          if self.mapa[self.personaje_fila][self.personaje_columna - 1] == 1:
+          # Si el siguiente elemento a la derecha es una caja (1) o caja_meta (6)
+          if self.mapa[self.personaje_fila][self.personaje_columna - 1] == 1 or self.mapa[self.personaje_fila][self.personaje_columna - 1] == 6:
               # Comprobar si hay espacio para mover la caja
               if (self.personaje_columna - 2) >= 0 and self.mapa[self.personaje_fila][self.personaje_columna - 2] == 4: 
                   # Mover la caja
                   self.mapa[self.personaje_fila][self.personaje_columna - 2] = 1
                   # Donde estaba la caja, pone al personaje
                   self.mapa[self.personaje_fila][self.personaje_columna - 1] = 0
-                # Si el siguiente espacio es una meta "2"
+                  # Si el siguiente espacio es una meta "2"
               elif self.mapa[self.personaje_fila][self.personaje_columna - 2] == 2:
                   # Convertir la meta en una caja-meta
                   self.mapa[self.personaje_fila][self.personaje_columna - 2] = 6
                   # Mover la caja a esa posición
                   self.mapa[self.personaje_fila][self.personaje_columna - 1] = 0
-    
+
           # Donde estaba el personaje pone un piso
           self.mapa[self.personaje_fila][self.personaje_columna] = 4
           # Donde estaba el piso pone al personaje
           self.mapa[self.personaje_fila][self.personaje_columna - 1] = 0
           # Actualiza la posicion del personaje
           self.personaje_columna -= 1
-    
+
     def movimiento_arriba(self):
       # Comprobar si hay una pared (3) arriba
       if self.mapa[self.personaje_fila - 1][self.personaje_columna] != 3:
-          # Si el elemento arriba es una caja (1)
-          if self.mapa[self.personaje_fila - 1][self.personaje_columna] == 1:
+          # Si el siguiente elemento a la derecha es una caja (1) o caja_meta (6)
+          if self.mapa[self.personaje_fila - 1][self.personaje_columna] == 1 or self.mapa[self.personaje_fila - 1][self.personaje_columna] == 6:
               # Comprobar si hay espacio para mover la caja
               if (self.personaje_fila - 2) >= 0 and self.mapa[self.personaje_fila - 2][self.personaje_columna] == 4:
                   # Mover la caja
                   self.mapa[self.personaje_fila - 2][self.personaje_columna] = 1
                   # Donde estaba la caja, pone al personaje
                   self.mapa[self.personaje_fila - 1][self.personaje_columna] = 0
-                # Si el siguiente espacio es una meta "2"
+                  # Si el siguiente espacio es una meta "2"
               elif self.mapa[self.personaje_fila - 2][self.personaje_columna] == 2:
                   # Convertir la meta en una caja-meta
                   self.mapa[self.personaje_fila - 2][self.personaje_columna] = 6
                   # Mover la caja a esa posición
                   self.mapa[self.personaje_fila - 1][self.personaje_columna] = 0
-        
+
           # Donde estaba el personaje pone un piso
           self.mapa[self.personaje_fila][self.personaje_columna] = 4
           # Donde estaba el piso pone al personaje
           self.mapa[self.personaje_fila - 1][self.personaje_columna] = 0
           # Actualiza la posicion del personaje
           self.personaje_fila -= 1
-    
+
     def movimiento_abajo(self):
       # Comprobar si hay una pared (3) abajo
       if self.mapa[self.personaje_fila + 1][self.personaje_columna] != 3:
-          # Si el elemento abajo es una caja (1)
-          if self.mapa[self.personaje_fila + 1][self.personaje_columna] == 1:
+          # Si el siguiente elemento a la derecha es una caja (1) o caja_meta (6)
+          if self.mapa[self.personaje_fila + 1][self.personaje_columna] == 1 or self.mapa[self.personaje_fila + 1][self.personaje_columna] == 6:
               # Comprobar si hay espacio para mover la caja
               if (self.personaje_fila + 2) < len(self.mapa) and self.mapa[self.personaje_fila + 2][self.personaje_columna] == 4:
                   # Mover la caja
                   self.mapa[self.personaje_fila + 2][self.personaje_columna] = 1
                   # Donde estaba la caja, pone al personaje
                   self.mapa[self.personaje_fila + 1][self.personaje_columna] = 0
-                # Si el siguiente espacio es una meta "2"
+                  # Si el siguiente espacio es una meta "2"
               elif self.mapa[self.personaje_fila + 2][self.personaje_columna] == 2:
                   # Convertir la meta en una caja-meta
                   self.mapa[self.personaje_fila + 2][self.personaje_columna] = 6
                   # Mover la caja a esa posición
-                  self.mapa[self.personaje_fila + 1][self.personaje_columna] = 0
-            
-          # Donde estaba el personaje pone un piso
-          self.mapa[self.personaje_fila][self.personaje_columna] = 4
+                  self.mapa[self.personaje_fila + 1][self.personaje_columna] = 5
+
+          # Donde estaba el personaje pone un piso o meta
+          self.mapa[self.personaje_fila][self.personaje_columna] = 4 
           # Donde estaba el piso pone al personaje
           self.mapa[self.personaje_fila + 1][self.personaje_columna] = 0
           # Actualiza la posicion del personaje
