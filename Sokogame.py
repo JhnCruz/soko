@@ -74,26 +74,20 @@ class SokoGame_Retroversion:
                   if self.mapa[self.personaje_fila][self.personaje_columna + 2] == 4:
                       # Mover la caja
                       self.mapa[self.personaje_fila][self.personaje_columna + 2] = 1
-                      # Donde estaba la caja, pone al personaje o personaje_meta según corresponda
-                      if self.mapa[self.personaje_fila][self.personaje_columna] == 0:
-                          self.mapa[self.personaje_fila][self.personaje_columna + 1] = 0 
-                      else:
-                          self.mapa[self.personaje_fila][self.personaje_columna + 1] = 5
-                      # Si el siguiente espacio es una meta "2"
+                      # Donde estaba la caja, pone al personaje
+                      self.mapa[self.personaje_fila][self.personaje_columna + 1] = 0 
+                      # Si es siguiente espacio es una meta "2"
                   elif self.mapa[self.personaje_fila][self.personaje_columna + 2] == 2:
                       # Convertir la meta en una caja-meta
                       self.mapa[self.personaje_fila][self.personaje_columna + 2] = 6
                       # Mover la caja a esa posición
                       self.mapa[self.personaje_fila][self.personaje_columna + 1] = 5
-  
+    
               # Donde estaba el personaje pone un piso o un personaje_meta
               self.mapa[self.personaje_fila][self.personaje_columna] = 4
-              # Donde estaba el piso pone al personaje o personaje_meta según corresponda
-              if self.mapa[self.personaje_fila][self.personaje_columna] == 0:
-                  self.mapa[self.personaje_fila][self.personaje_columna + 1] = 0
-              else:
-                  self.mapa[self.personaje_fila][self.personaje_columna + 1] = 5
-              # Actualiza la posición del personaje
+              # Donde estaba el piso pone al personaje
+              self.mapa[self.personaje_fila][self.personaje_columna + 1] = 0
+              # Actualiza la posicion del personaje
               self.personaje_columna += 1
 
             
