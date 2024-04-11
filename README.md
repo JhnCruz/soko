@@ -25,8 +25,8 @@ ___
 - 2 - Metas
 - 3 - Paredes
 - 4 - Piso
-- 5 - Pesonaje meta
-- 6 - Caja meta
+- 5 - Pesonaje_meta
+- 6 - Caja_meta
 
 #### Mapa
 ````code
