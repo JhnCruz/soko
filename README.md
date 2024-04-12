@@ -97,18 +97,18 @@ Ejemplo de movimientos Inicio y Fin:
 
 | No. | Función | Kanban | Inicio | Fin | Fecha terminación |
 | --- | --- | --- | --- | --- | --- |
-| 5. | Personaje, espacio  | - | [      ] | [     ] | - |
-| 6. | Personaje, meta  | - | [      ] | [      ] |- |
-| 7. | Personaje, caja, espacio | - | [      ] | [      ] | - |
-| 8. | Personaje, caja,  meta | - | [      ] | [      ] | - |
-| 9. | Personaje, caja_meta, espacio | - | [       ] | [       ] | - |
-| 10. |Personaje, caja_meta, meta | - | [       ] | [       ] | - |
-| 11. | Personaje_meta, espacio | - | [       ] | [       ] | - |
-| 12. | Personaje_meta, meta | - | [       ] | [       ] | - |
-| 13. | Personaje_meta, caja, espacio | - | [       ] | [       ] | - |
-| 14. | Personaje_meta, caja, meta | - | [       ] | [       ] | - |
-| 15. | Personaje_meta, caja_meta, espacio | - | [       ] | [       ] | - |
-| 16. | Personaje_meta, caja_meta, meta | - | [       ] | [       ] | - |
+| 5. | Personaje, espacio  | Done | [ 0,4 ] | [ 4,0 ] | 12/04/2024 |
+| 6. | Personaje, meta  | Done | [ 0,2 ] | [ 4,5 ] | 12/04/2024 |
+| 7. | Personaje, caja, espacio | Done | [ 0,1,4 ] | [ 4,0,1 ] | 12/04/2024 |
+| 8. | Personaje, caja,  meta | Done | [ 0,1,2 ] | [ 4,0,6 ] | 12/04/2024 |
+| 9. | Personaje, caja_meta, espacio | Done | [ 0,6,4 ] | [ 4,5,1 ] | 12/04/2024 |
+| 10. |Personaje, caja_meta, meta | Done | [ 0,6,2 ] | [ 4,5,6 ] | 12/04/2024 |
+| 11. | Personaje_meta, espacio | Done | [ 5,4 ] | [ 2,0 ] | 12/04/2024 |
+| 12. | Personaje_meta, meta | Done | [ 5,2 ] | [ 2,5 ] | 12/04/2024 |
+| 13. | Personaje_meta, caja, espacio | Done | [ 5,1,4 ] | [ 2,0,1 ] | 12/04/2024 |
+| 14. | Personaje_meta, caja, meta | Done | [ 5,1,2 ] | [ 2,0,6 ] | 12/04/2024 |
+| 15. | Personaje_meta, caja_meta, espacio | Done | [ 5,6,4 ] | [ 2,5,1 ] | 12/04/2024 |
+| 16. | Personaje_meta, caja_meta, meta | Done | [ 5,6,2 ] | [ 2,5,6 ] | 12/04/2024 |
 
 ## Izquierda
 
