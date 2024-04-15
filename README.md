@@ -47,10 +47,12 @@ mapa =[
 ````
 <br>
 ### NIveles del juego
+
  - De 1 a "n" niveles.
-____
+<br>
+
 # El final de juego se obtendra hasta terminar el numero maximo de niveles.
-___
+
 ### Record goblal __user_09898__ 
 
 | Intentos por nivel | Tiempo promedio | Niveles superados |
