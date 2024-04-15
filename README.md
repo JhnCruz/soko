@@ -48,10 +48,9 @@ mapa =[
 <br>
 
 ### NIveles del juego
-
+<br>
  - De 1 a "n" niveles.
 <br>
-
 # El final de juego se obtendra hasta terminar el numero maximo de niveles.
 
 ### Record goblal __user_09898__ 
