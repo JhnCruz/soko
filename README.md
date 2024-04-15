@@ -46,6 +46,7 @@ mapa =[
         ]
 ````
 <br>
+
 ### NIveles del juego
 
  - De 1 a "n" niveles.
