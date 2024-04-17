@@ -28,8 +28,8 @@ class SokoGame_Retroversion:
                         [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3],
                         [3,4,4,4,4,4,4,4,4,4,4,4,4,3,4,4,2,3],
                         [3,4,0,4,3,4,4,4,4,4,4,4,4,4,4,2,2,3],
-                        [3,4,4,4,3,4,4,4,4,4,4,4,4,3,4,2,2,3],
-                        [3,3,3,3,3,4,4,4,4,4,4,4,4,3,3,3,3,3],
+                        [3,4,4,4,3,4,4,4,2,2,4,4,4,3,4,2,2,3],
+                        [3,3,3,3,3,4,4,4,2,2,4,4,4,3,3,3,3,3],
                         [3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3],
                         [3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3],
                         [3,4,4,4,1,4,4,4,3,4,3,4,4,4,4,4,4,3],
@@ -415,7 +415,12 @@ class SokoGame_Retroversion:
                     # Imprime el mapa
                     self.imprimirMapa()
                     # Pide al usuario el movimiento
-                    movimiento = input("Move to (a: Left, d: Right, w: Up, s: Down): ")
+                    print ("a: Left")
+                    print ("d: Right")
+                    print ("w: Up")
+                    print ("s: Down")
+                    print ("r: Restart level")
+                    movimiento = input()
                     # Moverse a la derecha
                     if movimiento == 'd':
                             self.movimiento_derecha()
@@ -433,4 +438,4 @@ class SokoGame_Retroversion:
                             self.reiniciar_mapa()
                         
 soko = SokoGame_Retroversion()
-soko
+soko.jugar()
